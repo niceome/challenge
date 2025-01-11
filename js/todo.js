@@ -5,7 +5,7 @@ document.getElementById("welcome").textContent = `환영합니다 !`;
 // 로그아웃
 document.getElementById("logoutBtn").addEventListener("click", () => {
   localStorage.removeItem("currentUser");
-  window.location.href = "login.html";
+  window.location.href = "index.html";
 });
 
 const todoList = JSON.parse(localStorage.getItem(`${currentUser}_todos`)) || [];
