@@ -9,7 +9,7 @@ document.getElementById("signupForm").addEventListener("submit", function (e) {
     localStorage.setItem(username, password);
     alert("회원가입 성공~");
   } else {
-    alert("회원 가입 실패~");
+    alert("비밀번호 7자리 이상 입력하세요~");
   }
 });
 

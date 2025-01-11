@@ -1,6 +1,11 @@
 const currentUser = localStorage.getItem("currentUser");
 
-document.getElementById("welcome").textContent = `환영합니다 !`;
+if (!currentUser) {
+  alert("로그인을 먼저 해주세요.");
+  window.locate.href = "index.html";
+}
+
+document.getElementById("welcome").textContent = `환영합니다! ${currentUser}`;
 
 // 로그아웃
 document.getElementById("logoutBtn").addEventListener("click", () => {
