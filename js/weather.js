@@ -14,4 +14,8 @@ function success(position) {
     });
 }
 
+function fail() {
+  console.log("can't find your location!");
+}
+
 navigator.geolocation.getCurrentPosition(success, fail);
