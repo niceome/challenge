@@ -120,6 +120,10 @@ button:active {
   background-color: #4a6cd7;
 }
 
+.weather {
+  margin-top: 30px;
+}
+
 /*  todo  */
 .todo_container {
   width: 90%;
