@@ -10,7 +10,7 @@ function success(position) {
       const weather = document.querySelector(".weather span:first-child");
       const city = document.querySelector(".weather span:last-child");
       city.innerText = data.name;
-      weather.innerText = `${data.weather[0].main} / ${data.main.temp}`;
+      weather.innerText = `현재 날씨 : ${data.weather[0].main} / 현재 기온 : ${data.main.temp}`;
     });
 }
 
