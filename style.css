@@ -126,7 +126,18 @@ button:active {
 
 /*  signup  */
 #signupForm {
-  
+}
+
+.complete {
+  margin: 25px 0;
+  padding: 12px;
+  font-size: 1.1rem;
+  background-color: lightgray;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 /*  todo  */

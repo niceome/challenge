@@ -14,5 +14,7 @@ document.getElementById("signupForm").addEventListener("submit", function (e) {
 });
 
 completeSignupBtn.addEventListener("click", () => {
-  window.location.href = "index.html";
+  if (username && password && password.length >= 7) {
+    window.location.href = "index.html";
+  }
 });
