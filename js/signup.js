@@ -2,7 +2,7 @@ const completeSignupBtn = document.querySelector(".complete");
 
 const backButton = document.querySelector(".backButton");
 
-//회원 가입 제출 조건건
+//회원 가입 제출 조건
 document.getElementById("signupForm").addEventListener("submit", function (e) {
   e.preventDefault();
 
