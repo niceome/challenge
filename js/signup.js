@@ -1,5 +1,8 @@
 const completeSignupBtn = document.querySelector(".complete");
 
+const backButton = document.querySelector(".backButton");
+
+//회원 가입 제출 조건건
 document.getElementById("signupForm").addEventListener("submit", function (e) {
   e.preventDefault();
 
@@ -14,6 +17,12 @@ document.getElementById("signupForm").addEventListener("submit", function (e) {
   }
 });
 
+//이전 버튼
+backButton.addEventListener("click", () => {
+  window.location.href = "index.html";
+});
+
+//회원 가입 완료 버튼
 completeSignupBtn.addEventListener("click", () => {
   const username = document.getElementById("username").value;
   const password = document.getElementById("password").value;
