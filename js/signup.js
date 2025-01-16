@@ -8,8 +8,15 @@ document.getElementById("signupForm").addEventListener("submit", function (e) {
 
   const username = document.getElementById("username").value;
   const password = document.getElementById("password").value;
+  const passwordCheck = document.getElementById("password_check").value;
 
-  if (username && password && password.length >= 7) {
+  if (
+    username &&
+    password &&
+    password.length >= 7 &&
+    passwordCheck &&
+    password === passwordCheck
+  ) {
     localStorage.setItem(username, password);
     alert("회원가입 성공~");
   } else {
@@ -26,8 +33,15 @@ backButton.addEventListener("click", () => {
 completeSignupBtn.addEventListener("click", () => {
   const username = document.getElementById("username").value;
   const password = document.getElementById("password").value;
+  const passwordCheck = document.getElementById("password_check").value;
 
-  if (username && password && password.length >= 7) {
+  if (
+    username &&
+    password &&
+    password.length >= 7 &&
+    passwordCheck &&
+    password === passwordCheck
+  ) {
     window.location.href = "index.html";
   }
 });
