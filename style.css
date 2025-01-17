@@ -195,6 +195,7 @@ button.add_todo {
   cursor: pointer;
   font-weight: bold;
   transition: background-color 0.3s ease;
+  margin-bottom: 10px;
 }
 
 button.add_todo:hover {
