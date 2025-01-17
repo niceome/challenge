@@ -1,9 +1,11 @@
 const images = [
-  "img1.avif",
-  "img2.avif",
-  "img3.avif",
-  "img4.avif",
-  "img5.avif",
+  "1.jpeg",
+  "2.jpeg",
+  "3.jpeg",
+  "4.jpeg",
+  "5.jpeg",
+  "6.jpeg",
+  "7.jpeg",
 ];
 
 let lastest = null;
