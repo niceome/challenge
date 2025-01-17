@@ -19,8 +19,16 @@ document.getElementById("signupForm").addEventListener("submit", function (e) {
   ) {
     localStorage.setItem(username, password);
     alert("회원가입 성공~");
-  } else {
+  } else if (username && password && password.length < 7) {
     alert("비밀번호 7자리 이상 입력하세요~");
+  } else if (
+    username &&
+    password &&
+    password.length >= 7 &&
+    passwordCheck &&
+    passwordCheck !== password
+  ) {
+    alert("비밀번호를 다시 확인해주세요~");
   }
 });
 
