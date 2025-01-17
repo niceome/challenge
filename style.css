@@ -130,8 +130,10 @@ button:active {
   margin-top: 30px;
 }
 
-/*  signup  */
-#signupForm {
+/*  signup 페이지*/
+
+#signupForm #username {
+  margin-bottom: 40px;
 }
 
 .complete {
@@ -146,7 +148,12 @@ button:active {
   transition: background-color 0.3s ease;
 }
 
-/*  todo  */
+h1 {
+  font-size: 1.5rem;
+}
+
+/* 투두리스트 스타일 */
+
 .todo_container {
   width: 90%;
   max-width: 500px;
@@ -157,52 +164,12 @@ button:active {
   color: #333;
 }
 
-/* 헤더 스타일 */
 .todo_header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
 }
-
-h1 {
-  font-size: 1.5rem;
-}
-
-.logout {
-  background-color: #ff6b6b;
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.logout:hover {
-  background-color: #ee5253;
-}
-
-/* 폼 스타일 */
-
-button.add_todo {
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-  margin-bottom: 10px;
-}
-
-button.add_todo:hover {
-  background-color: #45a049;
-}
-
-/* 투두리스트 스타일 */
 
 ul {
   list-style: none;
@@ -220,6 +187,22 @@ li {
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button.add_todo {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-bottom: 10px;
+}
+
+button.add_todo:hover {
+  background-color: #45a049;
 }
 
 button.delete,
@@ -241,4 +224,19 @@ button.delete:hover {
 
 button.edit:hover {
   background-color: #0056b3;
+}
+
+.logout {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.logout:hover {
+  background-color: #ee5253;
 }
