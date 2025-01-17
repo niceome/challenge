@@ -106,6 +106,10 @@ input:focus {
   gap: 15px;
 }
 
+.signup_form h5 {
+  text-decoration: underline;
+}
+
 .signup {
   margin: 0 30px 0 0;
   padding: 8px;

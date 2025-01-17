@@ -10,6 +10,11 @@ document.getElementById("signupForm").addEventListener("submit", function (e) {
   const password = document.getElementById("password").value;
   const passwordCheck = document.getElementById("password_check").value;
 
+  if (localStorage.getItem(username)) {
+    alert("이미 존재하는 ID입니다.");
+    return;
+  }
+
   if (
     username &&
     password &&
@@ -42,6 +47,11 @@ completeSignupBtn.addEventListener("click", () => {
   const username = document.getElementById("username").value;
   const password = document.getElementById("password").value;
   const passwordCheck = document.getElementById("password_check").value;
+
+  if (localStorage.getItem(username)) {
+    alert("이미 존재하는 ID입니다.");
+    return;
+  }
 
   if (
     username &&

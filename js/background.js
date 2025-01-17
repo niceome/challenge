@@ -22,8 +22,7 @@ function changeBackground() {
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.backgroundPosition = "center";
 
-  document.documentElement.style.height = "100%";
-  document.body.style.height = "100%";
+  document.body.style.imageRendering = "auto";
   lastest = images[randomIndex];
 }
 
