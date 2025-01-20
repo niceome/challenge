@@ -7,7 +7,7 @@ const weatherTranslations = {
   Snow: "눈",
   Drizzle: "이슬비",
   Thunderstorm: "뇌우",
-  Mist: "안개",
+  Haze: "안개",
 };
 
 function success(position) {
